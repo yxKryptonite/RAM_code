@@ -1,0 +1,39 @@
+SAVE_RENDER: True
+INFERENCE_GSAM: True
+USE_GSNET: True
+SAVE_ROOT: "run_realworld/gym_outputs/drawer_open"
+DATA_SOURCE: "droid"
+
+# language
+instruction: "open the drawer"
+obj: "drawer"
+prompt: "a photo of a drawer"
+
+# cam
+cam_w: 640
+cam_h: 360
+
+# GroundedSAM
+box_threshold: 0.3
+text_threshold: 0.25
+text_prompt:  "banana"
+device: "cuda"
+sam_version: "vit_h"
+sam_checkpoint: "assets/ckpts/sam_vit_h_4b8939.pth"
+grounded_checkpoint: "assets/ckpts/groundingdino_swint_ogc.pth"
+config: "vision/GroundedSAM/GroundingDINO/groundingdino/config/GroundingDINO_SwinT_OGC.py"
+
+gsnet:
+  save_files: False
+  dataset_root: ""
+  checkpoint_path: assets/ckpts/minkuresunet_kinect.tar
+  dump_dir: ./logs/
+  seed_feat_dim: 512
+  camera: kinect
+  num_point: 15000
+  batch_size: 1
+  voxel_size: 0.005
+  collision_thresh: 0.0000
+  voxel_size_cd: 0.01
+  infer: True
+  vis: False
