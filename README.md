@@ -112,6 +112,11 @@ We thank authors of [dift](https://github.com/Tsingularity/dift), [GeoAware-SC](
 If you find this work helpful, please consider citing:
 
 ```
-TODO
+@article{kuang2024ram,
+  title={RAM: Retrieval-Based Affordance Transfer for Generalizable Zero-Shot Robotic Manipulation},
+  author={Kuang, Yuxuan and Ye, Junjie and Geng, Haoran and Mao, Jiageng and Deng, Congyue and Guibas, Leonidas and Wang, He and Wang, Yue},
+  journal={arXiv preprint arXiv:2407.04689},
+  year={2024}
+}
 ```
 
