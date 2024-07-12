@@ -40,6 +40,8 @@ This is the official code release of [RAM: Retrieval-Based Affordance Transfer f
 
 3. GSNet
 
+    First, download the pretrained [checkpoints](https://drive.google.com/drive/folders/1iYTIxsLIvXOaYYj4SVxWYT47fpPGhgpm?usp=sharing) and put the `.tar` file into `assets/ckpts/`. We use `minkuresunet_kinect.tar` by default.
+
     ```
     # MinkowskiEngine, this may take a while
     git clone git@github.com:NVIDIA/MinkowskiEngine.git
